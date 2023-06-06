@@ -1,0 +1,45 @@
+-- Create a MAC store database
+
+/** MAC make-up:
+lipstick (5) ($10) 15
+lipgloss (5) ($15)
+brow pencil (5) ($5)
+concealer (5) ($20)
+foundation ($25)
+foundation brush ($9)
+mascara ($12)
+lashes ($15)
+highlighter ($25)
+lip liner ($20)
+beauty blender ($12)
+blush ($15)
+contour ($15)
+glitter ($20)
+lash glue ($18)
+eye liner ($15)
+twizzer ($8)
+**/
+
+CREATE TABLE MAC (id INTEGER PRIMARY KEY, name TEXT, QUANTITY INTEGER, PRICE INTEGER, AISLE INTEGER);
+
+INSERT INTO MAC VALUES (1, "lipstick",5,10,5);
+INSERT INTO MAC VALUES (2, "lipgloss",5,15,8);
+INSERT INTO MAC VALUES (3, "brow pencil",5,5,6);
+INSERT INTO MAC VALUES (4, "concealer",5,20,10);
+INSERT INTO MAC VALUES (5, "foundation",5,25,1);
+INSERT INTO MAC VALUES (6, "foundation brush",5,9,6);
+INSERT INTO MAC VALUES (7, "mascara",5,12,15);
+INSERT INTO MAC VALUES (8, "lashes",5,15,3);
+INSERT INTO MAC VALUES (9, "highlighter",5,25,5);
+INSERT INTO MAC VALUES (10, "lip liner",5,20,7);
+INSERT INTO MAC VALUES (11, "beauty blender",5,12,4);
+INSERT INTO MAC VALUES (12, "blush",5,15,6);
+INSERT INTO MAC VALUES (13, "contour",5,15,3);
+INSERT INTO MAC VALUES (14, "glitter",5,20,12);
+INSERT INTO MAC VALUES (15, "lash glue",5,18,2);
+INSERT INTO MAC VALUES (16, "eye liner",5,15,9);
+INSERT INTO MAC VALUES (17, "twizzer",5,8,5);
+
+SELECT * FROM MAC;
+SELECT AISLE,SUM(quantity) FROM MAC;
+SELECT * FROM MAC WHERE AISLE>5;
