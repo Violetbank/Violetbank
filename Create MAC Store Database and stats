@@ -1,25 +1,5 @@
 -- Create a MAC store database
 
-/** MAC make-up:
-lipstick (5) ($10) 15
-lipgloss (5) ($15)
-brow pencil (5) ($5)
-concealer (5) ($20)
-foundation ($25)
-foundation brush ($9)
-mascara ($12)
-lashes ($15)
-highlighter ($25)
-lip liner ($20)
-beauty blender ($12)
-blush ($15)
-contour ($15)
-glitter ($20)
-lash glue ($18)
-eye liner ($15)
-twizzer ($8)
-**/
-
 CREATE TABLE MAC (id INTEGER PRIMARY KEY, name TEXT, QUANTITY INTEGER, PRICE INTEGER, AISLE INTEGER);
 
 INSERT INTO MAC VALUES (1, "lipstick",5,10,5);
